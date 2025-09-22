@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.F {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header, footer {
+    background-color: #074207;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Шапка и подвал на всю ширину */
+}
+
+.L {
+    float: left; /* Логотип слева */
+    max-width: 100px; /* Ширина логотипа */
+    margin-right: 20px;
+}
+
+nav {
+    float: right; /* Меню справа */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+/* Стили для строк таблицы */
+table tbody tr:nth-child(even) {
+    background-color: #1c4e0f;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #201c1c;
+    color: #fff; /* Цвет для нечётных строк */
+}
+
+/* Стили для заголовка таблицы */
+table thead {
+    background-color: transparent; /* Убираем фон у заголовка */
+    color: #000000; /* Цвет текста в заголовке */
+}
+
+table thead th {
+    background-color: transparent; /* Дополнительно убираем фон у ячеек заголовка */
+    padding: 10px;
+    border: 1px solid #000000;
+}
