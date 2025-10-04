@@ -1,31 +1,33 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт</title>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>  <!-- Объявление типа документа -->
+<html lang="ru">  <!-- Корневой элемент HTML, указание языка -->
+<head> <!-- Заголовок документа, содержит мета-информацию -->
+    <meta charset="UTF-8"> <!-- Установка кодировки документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Настройка адаптивности -->
+    <title>Сайт</title> <!-- Заголовок вкладки браузера -->
+    <link rel="stylesheet" href="style.css"> <!-- Подключение внешнего CSS-файла -->
 </head>
-<body>
-    <header>
-        <div class="F">
-            <img src="https://avatars.mds.yandex.net/i?id=c773ca51a07233f2e45f62a11746d96e_l-4359636-images-thumbs&n=13" alt="Логотип" class="L">
-            <nav>
-                <ul>
-                    <li><a href="#">Ссылка меню 1</a></li>
+<body> <!-- Тело документа, содержит весь видимый контент -->
+    <header> <!-- Заголовок сайта -->
+        <div class="F"> <!-- Контейнер с классом F для стилизации -->
+            <img src="https://avatars.mds.yandex.net/i?id=c773ca51a07233f2e45f62a11746d96e_l-4359636-images-thumbs&n=13" alt="Логотип" class="L"> <!-- Логотип сайта с классом L -->
+            <nav> <!-- Навигационное меню -->
+                <ul> <!-- Маркированный список -->
+                    <!-- Пунктs меню с ссылкой -->
+                    <li><a href="#">Ссылка меню 1</a></li> 
                     <li><a href="#">Ссылка 2</a></li>
                     <li><a href="#">Ссылка 3</a></li>
                 </ul>
             </nav>
-            <h1>Мой сайт</h1>
+            <h1>Мой сайт</h1> <!-- Заголовок первого уровня -->
         </div>
     </header>
 
-    <main>
-        <div class="F">
-            <section>
-                <h2>Список гиперссылок:</h2>
-                <ul>
+    <main> <!-- Основной контент страницы -->
+        <div class="F"> <!-- Контейнер с классом F -->
+            <section> <!-- Секция c контентом -->
+                <h2>Список гиперссылок:</h2> <!-- Заголовок второго уровня -->
+                <ul> <!-- Список ссылок -->
+                    <!-- Ну и сами элементы -->
                     <li> <a href="https://kubsu.ru/"> 1 </a> </li>
                     <li> <a href="https://kubsu.ru/"> 2 </a> </li>
                     <li> <a href="http://kubsu.ru/"> <img src="picture.jpg" alt="Изображение 3"> 3 </a></li>
@@ -59,31 +61,36 @@
                 </ol>
                 <p id="about">6.куда</p>
             </section>
-            <section>
-                <h2>Таблица</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="4">Заголовок таблицы</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Ячейка 11</td>
-                            <td>Ячейка 12</td>
-                            <td>Ячейка 13</td>
-                            <td>Ячейка 14</td>
-                        </tr>
-                        <tr>
-                            <td>Ячейка 21</td>
-                            <td>Ячейка 22</td>
-                            <td>Ячейка 23</td>
-                            <td>Ячейка 24</td>
-                        </tr>
-                    </tbody>
+            <section> <!-- Секция с таблицей -->
+                <h2>Таблица</h2>  <!-- Заголовок секции -->
+                <table> <!-- Начало таблицы -->
+                  <thead> <!-- Заголовок таблицы -->
+                    <tr> <!-- Строка таблицы -->
+                      <th colspan="4">Заголовок</th> <!-- Заголовочная ячейка на 4 столбца -->
+                    </tr>
+                  </thead>
+                  <tbody> <!-- Тело таблицы -->
+                    <tr>
+                        <td rowspan="2">Объединённая ячейка</td>
+                        <td>Ячейка 11</td>
+                        <td>Ячейка 12</td>
+                        <td>Ячейка 13</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 21</td>
+                        <td>Ячейка 22</td>
+                        <td>Ячейка 23</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 31</td>
+                        <td colspan="2">Объединённая по горизонтали</td>
+                        <td>Ячейка 34</td>
+                    </tr>
+                  </tbody>
                 </table>
             </section>
             <section>
+                <!-- Секция с формой -->
                 <h2>Форма:</h2>
                   <form action="/submit" method="post">
                   <div class="1">
