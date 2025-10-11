@@ -26,40 +26,41 @@
         <div class="F"> <!-- Контейнер с классом F -->
             <section> <!-- Секция c контентом -->
                 <h2>Список гиперссылок:</h2> <!-- Заголовок второго уровня -->
-                <ul> <!-- Список ссылок -->
-                    <!-- Ну и сами элементы -->
-                    <li> <a href="https://kubsu.ru/"> 1 </a> </li>
-                    <li> <a href="https://kubsu.ru/"> 2 </a> </li>
-                    <li> <a href="http://kubsu.ru/"> <img src="picture.jpg" alt="Изображение 3"> 3 </a></li>
-                    <li> <a href="/about"> 4 </a> </li>
-                    <li><a href="/">5 </a></li>
-                    <li> <a href="#about"> 6.откуда</a></li>
-                    <li><a href="https://kubsu.ru/?a=b&c=d&e=f">7</a></li>
-                    <li><a href="https://kubsu.ru/?id=g">8</a></li>
-                    <li> <a href="about.html"> 9 </a> </li>
-                    <li> <a href="/about.html"> 10 </a> </li>
-                    <li> <a href="../about.html"> 11 </a> </li>
-                    <li> <a href="../../about.html"> 12 </a> </li>
-                    <li> Это <a href="about.html"> 13 </a></li>
-                    <li><a href="https://example.com#x">14</a></li>
-                    <li>
-                        <img src="map.jpg" alt="Карта" usemap="#map">
-                        <map name="map">
-                            <area shape="rect" coords="0,0,1,1" href="a.html" alt="15.1"> 
-                            <area shape="circle" coords="0,0,3" href="b.html" alt="15.2">
-                        </map> 
-                    </li>
-                    <li><a href=""> 16</a></li>
-                    <li><a>17</a></li>
-                    <li><a href="https://kubsu.ru" rel="nofollow"> 18 </a></li>
-                    <li><a href="https://kubsu.ru" rel="noindex"> 19 </a></li>
-                    <li><a href="ftp://лxyz:1234@ftp.example.com/about.html">21</a>
+                <ul>  <!-- Неупорядоченный список ссылок -->
+                  <li> <a href="https://kubsu.ru/" > 1 </a> </li> <!-- Пункт списка с ссылкой на сайт -->
+                  <li> <a href="https://kubsu.ru/"> 2 </a> </li> <!-- Аналогично предыдущему -->
+                  <li> <a href="https://kubsu.ru/" > <img src="https://static.kino.1tv.ru/cdn/3291/background.jpg" alt="3">  </a></li> <!-- Ссылка с изображением внутри -->
+                  <li> <a href="/about"> 4 </a> </li> <!-- Ссылка на внутреннюю страницу -->
+                  <li><a href="/">5 </a></li> <!-- Ссылка на главную страницу сайта -->
+                  <li> 
+                    <a href="#about"> 6.откуда</a> <!-- Якорная ссылка -->
+                    <p id="about"> 6.куда</p> <!-- Якорный элемент -->
+                  </li>
+                  <li><a href="https://kubsu.ru/?a=b&c=d&e=f">7</a></li> <!-- Ссылка с GET-параметрами -->
+                  <li><a href="https://kubsu.ru/?id=g">8</a></li> <!-- Ссылка с одним GET-параметром -->
+                  <li> <a href="about.html"> 9 </a> </li> <!-- Ссылка на файл в текущей директории -->
+                  <li> <a href="/about.html"> 10 </a> </li> <!-- Ссылка на файл из корня сайта -->
+                  <li> <a href="../about.html"> 11 </a> </li> <!-- Ссылка на файл в родительской директории -->
+                  <li> <a href="../../about.html"> 12 </a> </li> <!-- Ссылка на файл через две директории вверх -->
+                  <li> Это <a href="about.html"> 13 </a></li> <!-- Текст с вложенной ссылкой -->
+                  <li><a href="https://example.com#x">14</a></li> <!-- Внешняя ссылка с якорем -->
+                  <li>
+                    <img src="https://i.pinimg.com/474x/b6/a2/fa/b6a2faaad435ad7bdc52abe8353500a1.jpg?nii=t" usemap="#map" alt="15"> <!-- Изображение с картой областей -->
+                    <map name="map"> <!-- Карта областей для изображения -->
+                      <area shape="rect" coords="0,0,15,15" href="a.html" alt="15.1">  <!-- Прямоугольная кликабельная область, где(x1;y1),(x2;y2), т.е. координаты левого верхнего и правого нижнего, задаются в пикселях -->
+                      <area shape="circle" coords="100,100,33" href="b.html" alt="15.2" > <!-- Круглая кликабельная область -->
+                    </map> 
+                  </li>
+                  <li><a href=""> 16</a></li> <!-- Пустая ссылка (может использоваться для JavaScript) -->
+                  <li><a>17</a></li> <!-- Ссылка без href (неактивная) -->
+                  <li><a href="https://kubsu.ru" rel="nofollow"> 18 </a></li> <!-- Ссылка с указанием не передавать вес страницы -->
+                  <li><a href="https://kubsu.ru" rel="noindex"> 19 </a></li> <!-- Ссылка с указанием не индексировать -->
+                  <li><a href="ftp://xyz:1234@ftp.example.com/about.html">21</a> <!-- FTP-ссылка с авторизацией -->
                 </ul>
-                <ol>
-                    <li><a href="#" title="a">20/1</a></li>
-                    <li><a href="#" title="b">20/2</a></li>
+                <ol> <!-- Упорядоченный (нумерованный) список -->
+                  <li><a href="#" title="a">20/1</a></li> <!-- Нумерованный пункт со ссылкой и всплывающей подсказкой -->
+                  <li><a href="#" title="b">20/2</a></li> <!-- Аналогично предыдущему -->
                 </ol>
-                <p id="about">6.куда</p>
             </section>
             <section> <!-- Секция с таблицей -->
                 <h2>Таблица</h2>  <!-- Заголовок секции -->
@@ -126,7 +127,7 @@
                   </div>
                   <div class="1">
                       <label>любимый язык программирования</label>
-                      <select name="programming_languages" multiple size="6">
+                      <select name="programming_languages[]" multiple size="3">
                           <option value="Pascal">Pascal</option>
                           <option value="C">C</option>
                           <option value="Cpp">C++</option>
