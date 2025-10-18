@@ -12,7 +12,7 @@ body {
 }
 
 /* Стили для header и footer */
-header, footer {
+.M {
     
     background-color: #074207; /* Цвет фона - темно-зеленый */
     padding: 20px 0; /* Отступы сверху и снизу */
@@ -91,6 +91,7 @@ table thead th {
     padding: 10px; /* Внутренние отступы */
     border: 1px solid #000000; /* Граница черного цвета */
 }
+
 
 
 
